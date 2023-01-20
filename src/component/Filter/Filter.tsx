@@ -1,7 +1,6 @@
 import { Pagination } from "../Pagination/Pagination"
 import "./Filter.css"
 import box from "../../fileJson/listCheckbock.json"
-console.log(box)
 function Filter() {
     return (
         <div className="filter__block">
@@ -22,7 +21,7 @@ function Filter() {
                     </div>
                 )}
             </div>
-            {/* <Pagination/> */}
+
         </div>
     )
 }

@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
-
 import './Films.css';
 import { Film } from "../Film/Film";
-import {listfilms} from "../../fileJson/movieListings"
 import data from "../../fileJson/films.json"
 import { Pagination } from '../Pagination/Pagination';
 
@@ -17,7 +15,6 @@ function Films () {
     const lastFilmIndex = currentPage * countPerPage;
     const firstFilmIndex = lastFilmIndex - countPerPage;
 
-    // const pagiNate = pageNumber => SetCurrentPage(pageNumber)
     const nextPage = () => SetCurrentPage( prev => prev + 1) 
     const backPage = () => SetCurrentPage( prev =>  prev - 1) 
 
