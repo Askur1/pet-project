@@ -1,14 +1,13 @@
-// import img from "../../../public/1610055-1581274.jpeg"
 import "./Film.css"
 interface MOVIE_LISTINGS{
-    title: string;
-    vote: number;
-    imagePath: string;
-    id: number;
-    
+    title: string
+    vote: number
+    imagePath: string
+    id: number
+    popularity: number
 }
 
-function Film({vote,title,imagePath, id}: MOVIE_LISTINGS) {
+function Film({vote,title,imagePath, id,popularity }: MOVIE_LISTINGS) {
     return (
        <div className="movie__block" key={id}>
             <div className="movie__block-image">
@@ -17,6 +16,7 @@ function Film({vote,title,imagePath, id}: MOVIE_LISTINGS) {
             <div className="movie__block-data">
                 <div className="movie__block-data-information">
                     <p className="movie__block-data-information-rating">Рейтинг: {vote}</p>
+                    <p>Популярность {popularity} </p>
                     <button className="movie__block-data-information-star">
                         <svg
                             width="24"

@@ -1,12 +1,12 @@
 import './Pagination.css'
 
 interface movi {
-  countPerPage: number;
-  totalFilms:number;
-  currentPage:number;
-  nextPage:() => void;
-  backPage: () => void;
-  firstPage:number;
+  countPerPage: number
+  totalFilms:number
+  currentPage:number
+  nextPage:() => void
+  backPage: () => void
+  firstPage:number
 
 }
 
